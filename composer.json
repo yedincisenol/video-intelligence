@@ -1,0 +1,38 @@
+{
+    "name": "yedincisenol/video-intelligence",
+    "description": "Laravel wrapper for GCloud Video Intelligence PHP client",
+    "type": "library",
+    "require": {
+        "google/cloud-videointelligence": "v1.0.*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ibrahim S. Orencik",
+            "email": "o@yedincisenol.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "yedincisenol\\VideoIntelligence\\LaravelServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-0" : {
+            "yedincisenol\\VideoIntelligence\\" : "src"
+        },
+        "psr-4": {
+            "yedincisenol\\VideoIntelligence\\" : "src"
+        }
+    },
+    "keywords": [
+        "gcloud",
+        "laravel",
+        "video intelligence",
+        "gcloud video intelligence",
+        "php video intelligence"
+    ],
+    "version": "0.1.0"
+}
