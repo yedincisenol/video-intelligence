@@ -42,7 +42,7 @@ class LaravelServiceProvider extends ServiceProvider
     {
         $this->app->singleton(VideoIntelligence::class, function ($app) {
             return new VideoIntelligenceServiceClient([
-                'credentials'   =>  json_decode(file_get_contents($app['config']['vision']['credentials_path']), true)
+                'credentials'   =>  json_decode(file_get_contents($app['config']['videointelligence']['credentials_path']), true)
             ]);
         });
 
