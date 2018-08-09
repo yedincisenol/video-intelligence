@@ -48,7 +48,7 @@ VIDEO_INTELLIGENCE_CREDENTIALS_PATH=
 ```
 use VideoIntelligence;
 
-VideoIntelligence::annotateVideo(['inputUri' => 'gs://pandora-test/video-1.mp4', ['features' => [1]]]);
+VideoIntelligence::annotateVideo(['inputUri' => 'gs://pandora-test/video-1.mp4', 'features' => [1]]);
 $operationResponse = VideoIntelligence::annotateVideo(['inputUri' => 'gs://pandora-test/video-1.mp4', 'features' => [1]]);
 
 $operationResponse->pollUntilComplete();
