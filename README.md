@@ -32,7 +32,7 @@ composer require "yedincisenol/video-intelligence"
 ```php
 'aliases' => [
         ...
-        'Vision'    =>  \yedincisenol\VideoIntelligence\LaravelFacede::class
+        'VideoIntelligence'    =>  \yedincisenol\VideoIntelligence\LaravelFacede::class
 ],
 ```
 
